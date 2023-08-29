@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pago izipay</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pago izi</h1>
+        <form action="procesar_pago.php" method="post">
+            <label for="nombre-tarjeta">Nombre en la Tarjeta:</label>
+            <input type="text" id="nombre-tarjeta" name="nombre-tarjeta" required><br>
+
+            <label for="numero-tarjeta">Número de Tarjeta:</label>
+            <input type="text" id="numero-tarjeta" name="numero-tarjeta" required><br>
+
+
+
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" required><br>
+
+            <label for="monto">Monto:</label>
+            <input type="number" id="monto" name="monto" step="0.01" required><br>
+
+            <input type="submit" href="https://www.izipay.pe" value="Pagar">
+        </form>
+    </div>
+
+
+</body>
+</html>
